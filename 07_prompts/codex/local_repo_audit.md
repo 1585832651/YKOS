@@ -1,4 +1,4 @@
-# Codex Local Repo Audit
+# Codex 本地仓库审计提示词
 
 你现在在本地 YkOS 仓库中工作。请审计仓库结构和任务状态，只做必要的最小修复。
 
@@ -25,20 +25,20 @@
 
 输出格式：
 
-## Pass / Fail
+## 通过 / 失败
 
-## Fixed
+## 已修复
 
-## Still Missing
+## 仍然缺失
 
-## Risks
+## 风险
 
-## Next Actions
+## 下一步动作
 
 ## Memory Delta
 
-- New Facts:
-- New Decisions:
-- Changed Assumptions:
-- Affected Files:
-- Pending Review:
+- 新事实：
+- 新决策：
+- 假设变化：
+- 影响文件：
+- 待审核项：

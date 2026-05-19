@@ -1,6 +1,6 @@
-# YkOS Index
+# YkOS 导航
 
-## Core Files
+## 核心文件
 
 - [README](README.md)
 - [AGENTS](AGENTS.md)
@@ -10,11 +10,11 @@
 - [TOOL_REGISTRY](TOOL_REGISTRY.md)
 - [WORKFLOW](WORKFLOW.md)
 
-## System Archive
+## 系统归档
 
 - [00_system](00_system/)
 
-## Inbox
+## Inbox 输入区
 
 - [Raw](01_inbox/raw/)
 - [Web](01_inbox/web/)
@@ -25,7 +25,7 @@
 - [ChatGPT](01_inbox/chatgpt/)
 - [Ideas](01_inbox/ideas/)
 
-## Knowledge
+## 知识库
 
 - [AI Grid](02_knowledge/ai_grid/)
 - [Agents](02_knowledge/agents/)
@@ -35,20 +35,20 @@
 - [Career](02_knowledge/career/)
 - [Self](02_knowledge/self/)
 
-## Projects
+## 项目区
 
 - [Power Doc Agent](03_projects/power_doc_agent/)
 - [AI Grid Research](03_projects/ai_grid_research/)
 - [Public Account](03_projects/public_account/)
 - [Investment Research](03_projects/investment_research/)
 
-## Memory Transactions
+## 记忆事务
 
 - [Pending](04_memory_transactions/pending/)
 - [Approved](04_memory_transactions/approved/)
 - [Rejected](04_memory_transactions/rejected/)
 
-## Prompts
+## 提示词
 
 - [ChatGPT](07_prompts/chatgpt/)
 - [Codex](07_prompts/codex/)

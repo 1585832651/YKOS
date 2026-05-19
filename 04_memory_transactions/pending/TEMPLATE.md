@@ -1,27 +1,27 @@
-# Memory Transaction Template
+# Memory Transaction 模板
 
-- ID:
-- Trigger:
-- Sources:
-- Extracted Facts:
-- Inference:
-- Decisions:
-- Affected Files:
-- Proposed Patch:
-- Risks:
-- Human Review Required:
-- Status: pending
+- ID：
+- 触发原因：
+- 来源：
+- 提取事实：
+- 推理：
+- 决策：
+- 影响文件：
+- 拟议修改：
+- 风险：
+- 是否需要人工审核：
+- 状态：pending
 
-## Field Rules
+## 字段规则
 
-- ID: use a stable date-based identifier, such as `MT-2026-05-19-001`.
-- Trigger: describe why this update exists.
-- Sources: list file paths, links, papers, or human-provided context.
-- Extracted Facts: only sourced facts.
-- Inference: reasoning derived from facts; mark uncertainty.
-- Decisions: explicit choices made by the owner or workflow.
-- Affected Files: files that may need updates.
-- Proposed Patch: exact proposed memory or knowledge change.
-- Risks: possible errors, conflicts, or outdated assumptions.
-- Human Review Required: yes or no, with reason.
-- Status: pending, approved, or rejected.
+- ID：使用稳定的日期型编号，例如 `MT-2026-05-19-001`。
+- 触发原因：说明为什么需要这次更新。
+- 来源：列出文件路径、链接、论文或人工提供的上下文。
+- 提取事实：只写有来源的事实。
+- 推理：基于事实得到的判断，需要标记不确定性。
+- 决策：用户或工作流明确做出的选择。
+- 影响文件：可能需要更新的文件。
+- 拟议修改：需要写入记忆或知识库的具体变更。
+- 风险：可能存在的错误、冲突或过时假设。
+- 是否需要人工审核：写“是”或“否”，并说明原因。
+- 状态：pending、approved 或 rejected。

@@ -1,42 +1,42 @@
-# YkOS Memory
+# YkOS 记忆
 
-## Stable Identity
+## 稳定身份
 
-- The owner is a graduate student in Artificial Intelligence at Huazhong University of Science and Technology.
-- The owner's research direction is AI + power grid.
-- The owner wants to become a research-oriented Builder in AI + energy.
+- 用户是华中科技大学人工智能专业研究生。
+- 用户研究方向是 AI + 电网。
+- 用户希望成为 AI + 能源方向的研究型 Builder。
 
-## Long-term Positioning
+## 长期定位
 
-YkOS should support research, project execution, content production, and review loops across multiple AI tools without treating chat history as durable memory.
+YkOS 应支持科研、项目推进、内容生产和多工具复盘，不依赖聊天记录作为长期记忆。
 
-## Core Directions
+## 核心方向
 
-- AI + power grid research
-- AI Agents and enterprise Agent systems
-- Vibe Coding and AI-assisted software building
-- Public-account and self-media content
-- Investment research
+- AI + 电网科研。
+- AI Agent 与企业 Agent 系统。
+- Vibe Coding 与 AI 辅助软件构建。
+- 公众号与自媒体内容。
+- 投资研究。
 
-## Preferences
+## 偏好
 
-- Prefer Markdown as the durable memory format.
-- Prefer sourced facts over unsupported summaries.
-- Prefer small, reviewable changes over large automation.
-- Prefer local-first knowledge organization.
-- Prefer clear separation between inbox, formal knowledge, projects, and outputs.
+- 优先使用 Markdown 作为长期记忆格式。
+- 优先保留有来源事实，而不是无来源总结。
+- 优先做小而可审核的修改，而不是大规模自动化。
+- 优先本地优先的知识组织方式。
+- 明确区分 inbox、正式知识、项目和输出。
 
-## Known Risks
+## 已知风险
 
-- Chat output may be fluent but unsourced.
-- Raw notes may pollute formal memory if review is skipped.
-- Tool outputs may duplicate or contradict each other.
-- Investment notes may be misread as recommendations.
-- Over-automation may create fragile workflows before the knowledge model is stable.
+- AI 输出可能流畅但缺少来源。
+- 如果跳过审核，原始笔记可能污染正式记忆。
+- 不同工具输出可能重复或互相矛盾。
+- 投资笔记可能被误读为荐股或交易建议。
+- 工作流稳定前过度自动化会增加脆弱性。
 
-## Current System Rules
+## 当前系统规则
 
-- Every important tool output must include a Memory Delta.
-- Important updates first go to `04_memory_transactions/pending/`.
-- Formal memory should only contain reviewed, useful, and sourced information.
-- MVP v0.1 excludes APIs, crawlers, MCP Servers, dependency installation, and remote push.
+- 每次重要工具输出必须包含 Memory Delta。
+- 重要更新必须先进入 `04_memory_transactions/pending/`。
+- 正式记忆只应包含经过审核、有用且有来源的信息。
+- MVP 阶段不接 API、不写爬虫、不做 MCP Server、不安装依赖、不自动同步。

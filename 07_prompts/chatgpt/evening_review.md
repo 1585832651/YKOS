@@ -1,6 +1,6 @@
-# ChatGPT Evening Review
+# ChatGPT 晚间复盘提示词
 
-请把今天所有工具输出、文件变更和人工记录整合成 YkOS Evening Review。
+请把今天所有工具输出、文件变更和人工记录整合成 YkOS 晚间复盘。
 
 输入：
 
@@ -34,24 +34,24 @@
 
 ## 明日最小动作
 
-## Memory Transaction Draft
+## Memory Transaction 草案
 
-- ID:
-- Trigger:
-- Sources:
-- Extracted Facts:
-- Inference:
-- Decisions:
-- Affected Files:
-- Proposed Patch:
-- Risks:
-- Human Review Required:
-- Status: pending
+- ID：
+- 触发原因：
+- 来源：
+- 提取事实：
+- 推理：
+- 决策：
+- 影响文件：
+- 拟议修改：
+- 风险：
+- 是否需要人工审核：
+- 状态：pending
 
 ## Memory Delta
 
-- New Facts:
-- New Decisions:
-- Changed Assumptions:
-- Affected Files:
-- Pending Review:
+- 新事实：
+- 新决策：
+- 假设变化：
+- 影响文件：
+- 待审核项：

@@ -1,24 +1,24 @@
-# Investment Research
+# 投资研究
 
-## Goal
+## 目标
 
-Build a research-only investment note system for understanding companies, sectors, technologies, and long-term trends.
+建立一个只用于研究的投资笔记系统，用来理解公司、行业、技术和长期趋势。
 
-## Rule
+## 规则
 
-This project is for research only. It does not produce stock recommendations, trading instructions, or personalized financial advice.
+本项目只做研究，不提供荐股、交易指令或个性化金融建议。
 
-## Focus
+## 关注方向
 
-- AI infrastructure
-- energy and power systems
-- semiconductors and compute
-- enterprise software and Agents
-- long-term technology adoption
+- AI 基础设施。
+- 能源与电力系统。
+- 半导体与算力。
+- 企业软件与 Agent。
+- 长期技术采用趋势。
 
-## Next Actions
+## 下一步动作
 
-- Create an investment memo template.
-- Define source requirements for company and sector notes.
-- Separate facts, assumptions, valuation opinions, and open questions.
-- Keep all conclusions reviewable and non-prescriptive.
+- 创建投资 memo 模板。
+- 定义公司与行业笔记的来源要求。
+- 区分事实、假设、估值观点和开放问题。
+- 所有结论都必须可审核，且不能写成操作建议。

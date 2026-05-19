@@ -1,30 +1,30 @@
-# Power Doc Agent
+# 电网文档 Agent
 
-## Goal
+## 目标
 
-Build a minimal document Agent direction for power-grid related materials, focused on reliable reading, extraction, summarization, and review support.
+建设一个面向电网相关材料的最小文档 Agent 方向，重点支持可靠阅读、信息抽取、摘要生成和审核辅助。
 
-## Why
+## 为什么做
 
-Power-grid documents are often long, technical, and source-sensitive. A focused Agent can help turn documents into traceable notes and research-ready memory without losing citations.
+电网文档通常篇幅长、技术密度高、来源敏感。一个聚焦的文档 Agent 可以帮助把文档转化为可追溯笔记和可复用研究记忆，同时保留引用来源。
 
-## MVP Scope
+## MVP 范围
 
-- Define representative document types.
-- Collect sample source files manually.
-- Design extraction and Memory Delta rules.
-- Produce Markdown summaries with source references.
+- 定义代表性文档类型。
+- 手动收集样例来源文件。
+- 设计抽取规则与 Memory Delta 规则。
+- 生成带来源引用的 Markdown 摘要。
 
-## Non-goals
+## 不做事项
 
-- No production Agent.
-- No API integration.
-- No crawler.
-- No automatic document sync.
-- No unsourced technical claims.
+- 不做生产级 Agent。
+- 不接 API。
+- 不做爬虫。
+- 不做自动文档同步。
+- 不写无来源技术结论。
 
-## Next Actions
+## 下一步动作
 
-- List 3 to 5 target document types.
-- Create a sample input checklist.
-- Draft the first document-to-Memory-Delta prompt.
+- 列出 3 到 5 类目标文档。
+- 创建样例输入检查清单。
+- 起草第一个“文档到 Memory Delta”的提示词。

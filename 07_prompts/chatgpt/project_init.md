@@ -23,18 +23,18 @@
 
 输出格式：
 
-## Summary
+## 摘要
 
-## Current Understanding
+## 当前理解
 
-## Missing Context
+## 缺失上下文
 
-## Suggested First Actions
+## 建议的第一步动作
 
 ## Memory Delta
 
-- New Facts:
-- New Decisions:
-- Changed Assumptions:
-- Affected Files:
-- Pending Review:
+- 新事实：
+- 新决策：
+- 假设变化：
+- 影响文件：
+- 待审核项：

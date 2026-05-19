@@ -1,4 +1,4 @@
-# Codex Create Memory Transaction
+# Codex 创建 Memory Transaction 提示词
 
 请根据本次本地仓库修改，生成一个 Memory Transaction 文件草案。
 
@@ -23,24 +23,24 @@
 
 ## Memory Transaction
 
-- ID:
-- Trigger:
-- Sources:
-- Extracted Facts:
-- Inference:
-- Decisions:
-- Affected Files:
-- Proposed Patch:
-- Risks:
-- Human Review Required:
-- Status: pending
+- ID：
+- 触发原因：
+- 来源：
+- 提取事实：
+- 推理：
+- 决策：
+- 影响文件：
+- 拟议修改：
+- 风险：
+- 是否需要人工审核：
+- 状态：pending
 
-## Suggested Filename
+## 建议文件名
 
 ## Memory Delta
 
-- New Facts:
-- New Decisions:
-- Changed Assumptions:
-- Affected Files:
-- Pending Review:
+- 新事实：
+- 新决策：
+- 假设变化：
+- 影响文件：
+- 待审核项：

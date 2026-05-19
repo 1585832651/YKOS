@@ -1,28 +1,28 @@
-# OS files
+# 操作系统文件
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Secrets and credentials
+# 密钥与凭据
 .env
 .env.*
 secrets/
 credentials/
 
-# Dependencies and environments
+# 依赖与环境
 node_modules/
 __pycache__/
 .venv/
 venv/
 env/
 
-# Build and cache output
+# 构建与缓存输出
 dist/
 build/
 .cache/
 .pytest_cache/
 
-# Large archives
+# 大型压缩包
 *.zip
 *.7z
 *.rar

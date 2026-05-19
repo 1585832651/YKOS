@@ -1,20 +1,20 @@
-# Public Account
+# 公众号与自媒体
 
-## Goal
+## 目标
 
-Build a sustainable public-account and self-media content system around AI, energy, research practice, Agent building, and Vibe Coding.
+围绕 AI、能源、科研实践、Agent 构建和 Vibe Coding，建立可持续的公众号与自媒体内容系统。
 
-## Columns
+## 栏目
 
-- AI + energy research notes
-- DoResearch workflow
-- Vibe Coding practice
-- Agent product thinking
-- graduate research and career reflection
+- AI + 能源研究笔记。
+- DoResearch 工作流。
+- Vibe Coding 实践。
+- Agent 产品思考。
+- 研究生科研与职业反思。
 
-## Next Actions
+## 下一步动作
 
-- Define 3 repeatable article formats.
-- Create an idea inbox under `01_inbox/ideas/`.
-- Draft the first weekly topic list.
-- Keep facts sourced and separate personal opinions from evidence.
+- 定义 3 种可重复文章格式。
+- 在 `01_inbox/ideas/` 建立选题 inbox。
+- 起草第一份周选题列表。
+- 保持事实有来源，并明确区分个人观点与证据。

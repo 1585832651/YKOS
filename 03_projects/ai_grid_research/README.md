@@ -1,20 +1,20 @@
-# AI Grid Research
+# AI + 电网研究
 
-## Goal
+## 目标
 
-Build a durable research knowledge base for AI + power grid topics, supporting paper reading, topic tracking, and research direction selection.
+建立一个面向 AI + 电网主题的长期研究知识库，支持论文阅读、主题追踪和研究方向选择。
 
-## Core Topics
+## 核心主题
 
-- AI for power-grid operation and control
-- foundation models and Agents for energy systems
-- forecasting, optimization, and decision support
-- grid document intelligence
-- evaluation and safety of AI systems in grid scenarios
+- AI 用于电网运行与控制。
+- 面向能源系统的基础模型与 Agent。
+- 预测、优化与决策支持。
+- 电网文档智能。
+- 电网场景中 AI 系统的评估与安全。
 
-## Next Actions
+## 下一步动作
 
-- Create a topic map in `02_knowledge/ai_grid/`.
-- Add a paper intake template.
-- Select the first 5 papers or source documents for review.
-- Generate Memory Transactions only after source-grounded reading.
+- 在 `02_knowledge/ai_grid/` 创建主题地图。
+- 增加论文 intake 模板。
+- 选择前 5 篇论文或来源文档进行审核。
+- 只有完成来源阅读后，才生成 Memory Transaction。

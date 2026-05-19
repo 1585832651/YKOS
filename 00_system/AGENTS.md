@@ -1,73 +1,73 @@
-# YkOS Agent Protocol
+# YkOS Agent 工作协议
 
-## Owner Identity
+## 用户身份
 
-- Owner: a graduate student in Artificial Intelligence at Huazhong University of Science and Technology.
-- Research direction: AI + power grid.
-- Builder direction: AI + energy research builder, with interest in research systems, DoResearch, Vibe Coding, public-account content, enterprise Agents, and investment research.
+- 用户是华中科技大学人工智能专业研究生。
+- 研究方向是 AI + 电网。
+- 长期目标是成为 AI + 能源方向的研究型 Builder。
+- 关注方向包括科研、DoResearch、Vibe Coding、公众号/自媒体、企业 Agent 和投资研究。
 
-## System Goal
+## 系统目标
 
-YkOS is a Markdown-first personal AI knowledge base and workflow hub. It coordinates outputs from ChatGPT, Codex, Gemini, NotebookLM, opencode, Google Drive, Obsidian, GitHub, Web Search, and X / Twitter Search.
+YkOS 是一个 Markdown-first 的个人 AI 知识库与工作流中枢。它负责协调 ChatGPT、Codex、Gemini、NotebookLM、opencode、Google Drive、Obsidian、GitHub、Web Search、X / Twitter Search 等工具的输出回流。
 
-## Core Principles
+## 核心原则
 
-1. Do not treat AI chat history as long-term memory.
-2. Long-term memory must be distilled into Markdown.
-3. Every meaningful tool output must generate a Memory Delta.
-4. Every fact needs a source. Unsourced content is only an opinion, hypothesis, or working assumption.
-5. Important updates first enter `04_memory_transactions/pending/`.
-6. Do not directly pollute formal knowledge files with unreviewed material.
-7. Keep MVP v0.1 simple. Do not over-engineer.
+1. 不把 AI 聊天记录当作长期记忆。
+2. 长期记忆必须沉淀为 Markdown。
+3. 每次有意义的工具输出都必须生成 Memory Delta。
+4. 所有事实必须有来源。没有来源的内容只能标记为观点、假设或工作性判断。
+5. 重要更新必须先进入 `04_memory_transactions/pending/`。
+6. 未审核内容不能直接污染正式知识库。
+7. MVP 阶段保持简单，不做过度工程化。
 
-## Memory Delta Rules
+## Memory Delta 规则
 
-Each significant output should include:
+每次重要输出应包含：
 
-- New Facts: sourced facts discovered or confirmed.
-- New Decisions: decisions made in this work session.
-- Changed Assumptions: assumptions that were added, removed, or modified.
-- Affected Files: files that should be created, changed, or reviewed.
-- Pending Review: items requiring human validation.
+- 新事实：本次发现或确认的有来源事实。
+- 新决策：本次工作中形成的决策。
+- 假设变化：新增、删除或修改的假设。
+- 影响文件：需要创建、修改或复核的文件。
+- 待审核项：需要人工验证的内容。
 
-## Write Rules
+## 写入规则
 
-- Put raw input in `01_inbox/`.
-- Put approved domain knowledge in `02_knowledge/`.
-- Put active project notes in `03_projects/`.
-- Put proposed memory updates in `04_memory_transactions/pending/`.
-- Put finished deliverables in `05_outputs/`.
-- Put review records in `06_reviews/`.
-- Put reusable prompts in `07_prompts/`.
+- 原始输入放入 `01_inbox/`。
+- 审核后的领域知识放入 `02_knowledge/`。
+- 活跃项目笔记放入 `03_projects/`。
+- 待审核记忆更新放入 `04_memory_transactions/pending/`。
+- 成品输出放入 `05_outputs/`。
+- 复盘记录放入 `06_reviews/`。
+- 可复用提示词放入 `07_prompts/`。
 
-## Opposition Review Rules
+## 反方审查规则
 
-Before promoting content into formal memory, check:
+在把内容推进正式记忆前，必须检查：
 
-- Is the source explicit and retrievable?
-- Is this fact, inference, decision, or preference?
-- Is there a competing explanation?
-- Could this become outdated quickly?
-- Does this belong in project context instead of global memory?
-- Is the update useful for future work, or only noise?
+- 来源是否明确且可回溯？
+- 这是事实、推理、决策，还是偏好？
+- 是否存在相反解释？
+- 这条信息是否可能很快过时？
+- 它应该进入项目上下文，还是全局记忆？
+- 它对未来是否有复用价值，还是只是噪音？
 
-## Prohibited Actions
+## 禁止事项
 
-- Do not install dependencies unless explicitly requested.
-- Do not connect APIs unless explicitly requested.
-- Do not build MCP Servers in MVP v0.1.
-- Do not create crawlers or automated sync.
-- Do not push to remote repositories.
-- Do not delete existing user files.
-- Do not write secrets, credentials, or private tokens into the repo.
-- Do not promote unsourced claims into stable memory.
+- 未经明确要求，不安装依赖。
+- 未经明确要求，不接入 API。
+- MVP 阶段不构建 MCP Server。
+- 不做爬虫或自动同步。
+- 不删除用户已有文件。
+- 不把密钥、凭据、Token 写入仓库。
+- 不把无来源结论推进稳定记忆。
 
-## Required Output Format
+## 必需输出格式
 
-For substantial work, respond with:
+处理实质性工作时，输出应包含：
 
-1. Summary
-2. Changed Files
-3. Risks
-4. Next Actions
+1. 摘要
+2. 变更文件
+3. 风险
+4. 下一步动作
 5. Memory Delta

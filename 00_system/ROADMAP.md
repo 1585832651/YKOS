@@ -1,41 +1,40 @@
-# YkOS Roadmap
+# YkOS 路线图
 
-## 2026 Q2 Main Goal
+## 2026 Q2 主目标
 
-Build a usable Markdown-first operating system for AI + power grid research, Agent building, content production, and investment research.
+搭建一个可用的 Markdown-first 工作系统，支持 AI + 电网科研、Agent 构建、内容生产和投资研究。
 
-## This Month
+## 本月目标
 
-- Complete YkOS MVP v0.1 skeleton.
-- Stabilize Memory Delta and Memory Transaction workflows.
-- Create first reusable prompts for ChatGPT and Codex.
-- Start using daily and weekly reviews.
+- 完成 YkOS MVP v0.1 骨架。
+- 稳定 Memory Delta 与 Memory Transaction 流程。
+- 创建第一批 ChatGPT 与 Codex 可复用提示词。
+- 开始使用每日和每周复盘。
 
-## This Week
+## 本周目标
 
-- Verify directory structure and system files.
-- Run the first bootstrap audit.
-- Create the first pending Memory Transaction from the bootstrap work.
-- Decide the minimum v0.2 integration loop for GitHub, ChatGPT Project, and NotebookLM.
+- 审计 v0.1 目录结构与系统文件。
+- 运行第一次 bootstrap 审核。
+- 为 bootstrap 工作创建第一条 pending Memory Transaction。
+- 设计 GitHub、ChatGPT Project、NotebookLM 的 v0.2 最小闭环。
 
-## Non-goals
+## 不做事项
 
-- No API connection.
-- No MCP Server.
-- No crawler.
-- No automatic sync.
-- No external dependency.
-- No complex scripting.
-- No remote Git push.
+- 不接 API。
+- 不写 MCP Server。
+- 不做爬虫。
+- 不做自动同步。
+- 不引入外部依赖。
+- 不写复杂脚本。
 
-## YkOS v0.1 Definition of Done
+## YkOS v0.1 完成定义
 
-- Required directories exist.
-- Root system files exist and are meaningful.
-- `00_system/` contains synchronized system-file copies.
-- Four project pages exist.
-- ChatGPT and Codex prompt templates exist.
-- Memory Transaction template exists.
-- Bootstrap review exists.
-- Git repository is initialized locally.
-- No complex automation, dependency install, API call, or remote push has been introduced.
+- 必需目录全部存在。
+- 根目录系统文件存在且内容有效。
+- `00_system/` 包含同步系统文件副本。
+- 4 个项目页存在。
+- ChatGPT 与 Codex Prompt 模板存在。
+- Memory Transaction 模板存在。
+- Bootstrap review 存在。
+- 本地 Git 仓库已初始化。
+- 未引入复杂自动化、依赖安装、API 调用或远程自动同步。

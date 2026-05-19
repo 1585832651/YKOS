@@ -35,6 +35,48 @@ function Join-RelativePath {
     return $current
 }
 
+function Quote-ProcessArgument {
+    param([AllowEmptyString()][string]$Argument)
+
+    if ($null -eq $Argument) {
+        return '""'
+    }
+    if ($Argument.Length -eq 0) {
+        return '""'
+    }
+    if ($Argument -notmatch '[\s"]') {
+        return $Argument
+    }
+
+    $builder = [System.Text.StringBuilder]::new()
+    [void]$builder.Append('"')
+    $backslashes = 0
+    foreach ($ch in $Argument.ToCharArray()) {
+        if ($ch -eq '\') {
+            $backslashes += 1
+            continue
+        }
+        if ($ch -eq '"') {
+            if ($backslashes -gt 0) {
+                [void]$builder.Append(('\' * ($backslashes * 2)))
+                $backslashes = 0
+            }
+            [void]$builder.Append('\"')
+            continue
+        }
+        if ($backslashes -gt 0) {
+            [void]$builder.Append(('\' * $backslashes))
+            $backslashes = 0
+        }
+        [void]$builder.Append($ch)
+    }
+    if ($backslashes -gt 0) {
+        [void]$builder.Append(('\' * ($backslashes * 2)))
+    }
+    [void]$builder.Append('"')
+    return $builder.ToString()
+}
+
 function Invoke-Checked {
     param(
         [Parameter(Mandatory = $true)][string]$FilePath,
@@ -66,9 +108,7 @@ function Invoke-Checked {
     $startInfo.RedirectStandardError = $true
     $startInfo.StandardOutputEncoding = $outputEncoding
     $startInfo.StandardErrorEncoding = $outputEncoding
-    foreach ($arg in $Arguments) {
-        [void]$startInfo.ArgumentList.Add($arg)
-    }
+    $startInfo.Arguments = (($Arguments | ForEach-Object { Quote-ProcessArgument $_ }) -join " ")
 
     $process = [System.Diagnostics.Process]::new()
     $process.StartInfo = $startInfo

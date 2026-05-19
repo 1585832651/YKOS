@@ -14,6 +14,9 @@
 
 - [00_system](00_system/)
 - [Google Drive 同步规范](00_system/DRIVE_SYNC.md)
+- [Super Sync 规范](00_system/SUPER_SYNC.md)
+- [AI Agent 使用手册](00_system/AI_AGENT_MANUAL.md)
+- [用户使用手册](00_system/USER_MANUAL.md)
 
 ## Inbox 输入区
 
@@ -60,5 +63,7 @@
 ## 脚本与配置
 
 - [Drive 同步脚本](scripts/ykos_sync.ps1)
+- [Super Sync 脚本](scripts/ykos_super_sync.ps1)
+- [一天自动化模拟脚本](scripts/ykos_day_simulation.py)
 - [Drive 同步配置](scripts/ykos_config.json)
 - [Drive 同步配置模板](scripts/ykos_config.example.json)

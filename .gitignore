@@ -2,6 +2,7 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+.obsidian/
 
 # 密钥与凭据
 .env
@@ -12,6 +13,7 @@ credentials/
 # 依赖与环境
 node_modules/
 __pycache__/
+*.pyc
 .venv/
 venv/
 env/

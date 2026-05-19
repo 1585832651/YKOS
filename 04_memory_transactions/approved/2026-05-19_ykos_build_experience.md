@@ -1,0 +1,39 @@
+# 2026-05-19 YkOS 构建经历 Memory Transaction
+
+- ID：MT-2026-05-19-ykos-build-experience
+- 触发原因：用户要求把今天构建 YkOS 项目的经历整理成 Markdown，并判断哪些内容应进入长期知识库。
+- 来源：
+  - 本地 Codex App 对话。
+  - `01_inbox/chatgpt/2026-05-19_ykos_build_conversation.md`
+  - `06_reviews/daily/2026-05-19_ykos_build_review.md`
+  - GitHub issue #1：`[YKOS-v0.3] Design Google Drive + GitHub sync workflow`
+  - 本地仓库文件和测试记录。
+- 提取事实：
+  - YkOS v0.1 Markdown 骨架已建立。
+  - 项目文档已统一中文化。
+  - GitHub 仓库 `1585832651/YKOS` 已接入。
+  - Google Drive 路径确认为 `G:\我的云端硬盘\YkOS_Drive`。
+  - `scripts/ykos_sync.ps1` 已实现 Drive 与本地 inbox / outputs 的交换。
+  - `scripts/ykos_day_simulation.py` 已完成 dry-run 和非 dry-run 测试。
+  - `scripts/ykos_super_sync.ps1` 已实现 Plan 模式并通过预演。
+  - 本地 Codex App 与 GitHub Cloud Codex 是不同执行环境。
+- 推理：
+  - YkOS 适合采用“双执行器”模式：GitHub Cloud Codex 负责云端 issue / PR / 仓库改动，本地 Codex 负责本地路径、Drive、Obsidian 和脚本验证。
+  - Google Drive 不应承担最终知识库职责，因为 Drive 内容可能来自未审核工具输出。
+  - Memory Transaction 是防止 AI 输出直接污染 `02_knowledge/` 的关键机制。
+  - 自动化脚本可以验证流程完整性，但不能替代人工对事实来源和长期价值的判断。
+- 决策：
+  - 本次经历已由用户确认进入正式知识库。
+  - 稳定经验拆分写入 `02_knowledge/vibe_coding/`、`02_knowledge/agents/`、`02_knowledge/self/`。
+- 影响文件：
+  - `02_knowledge/vibe_coding/ykos_local_cloud_codex_workflow.md`
+  - `02_knowledge/agents/ykos_memory_transaction_workflow.md`
+  - `02_knowledge/self/ykos_working_preferences.md`
+  - `04_memory_transactions/approved/2026-05-19_ykos_build_experience.md`
+- 拟议修改：
+  - 已应用。
+- 风险：
+  - 本文件来自对话整理，部分内容是经验总结，不应被误读为外部事实。
+  - 后续如工作流变化，应更新对应知识文件。
+- 是否需要人工审核：已审核。
+- 状态：approved

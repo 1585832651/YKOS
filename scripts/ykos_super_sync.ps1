@@ -55,18 +55,29 @@ function Invoke-Checked {
         }
     }
 
-    $process = Start-Process `
-        -FilePath $FilePath `
-        -ArgumentList $Arguments `
-        -WorkingDirectory $WorkingDirectory `
-        -NoNewWindow `
-        -Wait `
-        -PassThru `
-        -RedirectStandardOutput "$env:TEMP\ykos_super_sync_stdout.txt" `
-        -RedirectStandardError "$env:TEMP\ykos_super_sync_stderr.txt"
+    $stdoutPath = Join-Path $env:TEMP "ykos_super_sync_stdout.txt"
+    $stderrPath = Join-Path $env:TEMP "ykos_super_sync_stderr.txt"
+    $outputEncoding = [System.Text.UTF8Encoding]::new($false)
+    $startInfo = [System.Diagnostics.ProcessStartInfo]::new()
+    $startInfo.FileName = $FilePath
+    $startInfo.WorkingDirectory = $WorkingDirectory
+    $startInfo.UseShellExecute = $false
+    $startInfo.RedirectStandardOutput = $true
+    $startInfo.RedirectStandardError = $true
+    $startInfo.StandardOutputEncoding = $outputEncoding
+    $startInfo.StandardErrorEncoding = $outputEncoding
+    foreach ($arg in $Arguments) {
+        [void]$startInfo.ArgumentList.Add($arg)
+    }
 
-    $stdout = Get-Content -LiteralPath "$env:TEMP\ykos_super_sync_stdout.txt" -Raw -ErrorAction SilentlyContinue
-    $stderr = Get-Content -LiteralPath "$env:TEMP\ykos_super_sync_stderr.txt" -Raw -ErrorAction SilentlyContinue
+    $process = [System.Diagnostics.Process]::new()
+    $process.StartInfo = $startInfo
+    [void]$process.Start()
+    $stdout = $process.StandardOutput.ReadToEnd()
+    $stderr = $process.StandardError.ReadToEnd()
+    $process.WaitForExit()
+    Set-Content -LiteralPath $stdoutPath -Value $stdout -Encoding UTF8
+    Set-Content -LiteralPath $stderrPath -Value $stderr -Encoding UTF8
 
     if ($stdout) { Write-Host $stdout.TrimEnd() }
     if ($stderr) { Write-Host $stderr.TrimEnd() }
@@ -410,16 +421,29 @@ if ($Mode -eq "Plan") {
 }
 
 Write-Step "暂存允许提交的文件"
-$excludePathspecs = @(
-    ":(exclude).obsidian",
-    ":(exclude)**/__pycache__/**",
-    ":(exclude)**/*.pyc",
-    ":(exclude).env",
-    ":(exclude).env.*",
-    ":(exclude)secrets/**",
-    ":(exclude)credentials/**"
-)
-Get-GitOutput -Arguments (@("add", "--all", "--", ".") + $excludePathspecs) -WorkingDirectory $repoRoot | Out-Null
+Get-GitOutput -Arguments @("add", "-u") -WorkingDirectory $repoRoot | Out-Null
+
+$untracked = Get-GitOutput -Arguments @("ls-files", "--others", "--exclude-standard") -WorkingDirectory $repoRoot
+$allowedUntracked = @()
+if (-not [string]::IsNullOrWhiteSpace($untracked)) {
+    $allowedUntracked = $untracked -split "`r?`n" |
+        Where-Object { -not [string]::IsNullOrWhiteSpace($_) } |
+        Where-Object { $_ -notmatch "^\.obsidian/" } |
+        Where-Object { $_ -notmatch "(^|/)__pycache__/" } |
+        Where-Object { $_ -notmatch "\.pyc$" } |
+        Where-Object { $_ -notmatch "^\.env(\.|$)" } |
+        Where-Object { $_ -notmatch "^(secrets|credentials)/" } |
+        Where-Object {
+            $candidate = Join-Path $repoRoot $_
+            (Test-Path -LiteralPath $candidate -PathType Leaf) -and ((Get-Item -LiteralPath $candidate).Length -gt 0)
+        }
+}
+
+if ($allowedUntracked.Count -gt 0) {
+    Get-GitOutput -Arguments (@("add", "--") + $allowedUntracked) -WorkingDirectory $repoRoot | Out-Null
+} else {
+    Write-Host "没有允许暂存的未跟踪文件。"
+}
 
 $staged = Get-GitOutput -Arguments @("diff", "--cached", "--name-only") -WorkingDirectory $repoRoot
 if ([string]::IsNullOrWhiteSpace($staged)) {

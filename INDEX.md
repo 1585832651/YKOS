@@ -13,6 +13,7 @@
 ## 系统归档
 
 - [00_system](00_system/)
+- [Google Drive 同步规范](00_system/DRIVE_SYNC.md)
 
 ## Inbox 输入区
 
@@ -55,3 +56,9 @@
 - [Gemini](07_prompts/gemini/)
 - [NotebookLM](07_prompts/notebooklm/)
 - [opencode](07_prompts/opencode/)
+
+## 脚本与配置
+
+- [Drive 同步脚本](scripts/ykos_sync.ps1)
+- [Drive 同步配置](scripts/ykos_config.json)
+- [Drive 同步配置模板](scripts/ykos_config.example.json)

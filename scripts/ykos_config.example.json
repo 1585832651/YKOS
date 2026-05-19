@@ -1,0 +1,17 @@
+{
+  "ykos_root": "E:\\project\\YkOS",
+  "drive_path": "请在这里填写你的 Google Drive 本地同步路径，例如 G:\\我的云端硬盘\\YkOS_Drive",
+  "inbox_mapping": {
+    "02_notebooklm_exports": "01_inbox/notebooklm",
+    "03_gemini_outputs": "01_inbox/gemini",
+    "04_google_ai_studio": "01_inbox/gemini",
+    "01_sources/papers": "01_inbox/papers"
+  },
+  "export_mapping": {
+    "05_outputs/reports": "00_export_to_ykos/reports",
+    "05_outputs/prompts": "00_export_to_ykos/prompts"
+  },
+  "review_path": "06_reviews/daily",
+  "pending_path": "04_memory_transactions/pending",
+  "archive_after_import": false
+}

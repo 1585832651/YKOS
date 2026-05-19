@@ -88,6 +88,40 @@
 
 - `06_reviews/weekly/YYYY-WW.md`
 
+## Google Drive Exchange Workflow
+
+Google Drive 是 NotebookLM、Gemini、Google AI Studio 与本地 YkOS 之间的交换层，不是最终记忆源。
+
+输入路径：
+
+- `G:\我的云端硬盘\YkOS_Drive\02_notebooklm_exports` -> `01_inbox/notebooklm`
+- `G:\我的云端硬盘\YkOS_Drive\03_gemini_outputs` -> `01_inbox/gemini`
+- `G:\我的云端硬盘\YkOS_Drive\04_google_ai_studio` -> `01_inbox/gemini`
+- `G:\我的云端硬盘\YkOS_Drive\01_sources\papers` -> `01_inbox/papers`
+
+输出路径：
+
+- `05_outputs/reports` -> `G:\我的云端硬盘\YkOS_Drive\00_export_to_ykos\reports`
+- `05_outputs/prompts` -> `G:\我的云端硬盘\YkOS_Drive\00_export_to_ykos\prompts`
+
+运行方式：
+
+1. Google 工具输出先放入 Drive 对应目录。
+2. 手动运行 `scripts/ykos_sync.ps1`。
+3. 脚本把 Drive 输入复制到 `01_inbox/`，并生成 pending Memory Transaction。
+4. 脚本生成 daily review，用于记录同步文件数量和审核事项。
+5. 人工审核 pending Memory Transaction。
+6. 只有人工 approve 后，内容才允许进入 `02_knowledge/`。
+7. GitHub push 前必须确认 pending 审核状态和正式知识库变更。
+
+禁止规则：
+
+- Drive 输出不能直接写入 `02_knowledge/`。
+- 同步脚本不能修改 `02_knowledge/`。
+- 同步脚本不能执行 git commit 或 git push。
+- 同步脚本不能同步 `.git`。
+- 同步脚本不能删除文件。
+
 ## 工具回流路径
 
 - ChatGPT：`01_inbox/chatgpt/`、`06_reviews/`、`04_memory_transactions/pending/`

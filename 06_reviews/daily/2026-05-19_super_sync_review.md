@@ -20,14 +20,10 @@
 
 `	ext
 ## main...origin/main
-A  04_memory_transactions/pending/2026-05-19_2232_drive_sync.md
-A  04_memory_transactions/pending/2026-05-19_2232_super_sync.md
-MM 06_reviews/daily/2026-05-19_drive_sync_review.md
-A  06_reviews/daily/2026-05-19_super_sync_review.md
- M scripts/ykos_super_sync.ps1
+ M 06_reviews/daily/2026-05-19_drive_sync_review.md
 ?? 01_inbox/notebooklm.md
 ?? 02_knowledge/ai_grid.md
-?? 04_memory_transactions/pending/2026-05-19_2239_drive_sync.md
+?? 04_memory_transactions/pending/2026-05-19_2248_drive_sync.md
 
 `
 

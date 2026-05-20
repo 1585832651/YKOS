@@ -1,0 +1,12 @@
+{
+  "job_id": "2026-05-20_143155_drive_sync",
+  "type": "drive_sync",
+  "status": "succeeded",
+  "started_at": "2026-05-20T14:31:55+08:00",
+  "ended_at": "2026-05-20T14:31:56+08:00",
+  "exit_code": 0,
+  "stdout": "YkOS Drive 同步完成\nDrive 输入复制到本地 inbox：0\n本地输出复制到 Drive：5\nMemory Delta：E:\\project\\YkOS\\04_memory_transactions\\pending\\2026-05-20_1431_drive_sync.md\nDaily Review：E:\\project\\YkOS\\06_reviews\\daily\\2026-05-20_drive_sync_review.md\n",
+  "stderr": "",
+  "risk_flags": [],
+  "artifacts": []
+}

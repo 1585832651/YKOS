@@ -15,6 +15,8 @@
 - [00_system](00_system/)
 - [Google Drive 同步规范](00_system/DRIVE_SYNC.md)
 - [Super Sync 规范](00_system/SUPER_SYNC.md)
+- [YkOS Control Panel 设计规范](00_system/GUI_CONTROL_PANEL.md)
+- [YkOS Control Panel 后端设计](00_system/CONTROL_PANEL_BACKEND.md)
 - [AI Agent 使用手册](00_system/AI_AGENT_MANUAL.md)
 - [用户使用手册](00_system/USER_MANUAL.md)
 
@@ -45,6 +47,9 @@
 - [AI Grid Research](03_projects/ai_grid_research/)
 - [Public Account](03_projects/public_account/)
 - [Investment Research](03_projects/investment_research/)
+- [YkOS Control Panel](03_projects/ykos_control_panel/)
+- [YkOS Control Panel 后端设计](03_projects/ykos_control_panel/BACKEND_DESIGN.md)
+- [YkOS Control Panel API 合同](03_projects/ykos_control_panel/API_CONTRACT.md)
 
 ## 记忆事务
 
@@ -57,6 +62,7 @@
 - [ChatGPT](07_prompts/chatgpt/)
 - [Codex](07_prompts/codex/)
 - [Gemini](07_prompts/gemini/)
+- [Gemini GUI 设计提示词](07_prompts/gemini/ykos_gui_design.md)
 - [NotebookLM](07_prompts/notebooklm/)
 - [opencode](07_prompts/opencode/)
 

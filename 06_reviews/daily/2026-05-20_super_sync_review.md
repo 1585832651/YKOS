@@ -20,22 +20,10 @@
 
 `	ext
 ## main...origin/main
- M 06_reviews/daily/2026-05-19_drive_sync_review.md
+ M 06_reviews/daily/2026-05-20_drive_sync_review.md
 ?? 01_inbox/notebooklm.md
-?? 01_inbox/notebooklm/
 ?? 02_knowledge/ai_grid.md
-?? 04_memory_transactions/pending/2026-05-19_2258_drive_sync.md
-?? 04_memory_transactions/pending/2026-05-19_2259_drive_sync.md
-?? 04_memory_transactions/pending/2026-05-19_2301_drive_sync.md
-?? 04_memory_transactions/pending/2026-05-19_2304_drive_sync.md
-?? 04_memory_transactions/pending/2026-05-19_2316_drive_sync.md
-?? 04_memory_transactions/pending/2026-05-20_1138_drive_readme.md
-?? 04_memory_transactions/pending/2026-05-20_1140_drive_sync.md
-?? 04_memory_transactions/pending/2026-05-20_1143_drive_sync.md
-?? 05_outputs/prompts/
-?? 05_outputs/reports/
-?? 06_reviews/daily/2026-05-20_drive_readme.md
-?? 06_reviews/daily/2026-05-20_drive_sync_review.md
+?? 04_memory_transactions/pending/2026-05-20_1437_drive_sync.md
 
 `
 
